@@ -1,0 +1,19 @@
+<div class="position-relative" style="min-height: 20px">
+  <div class="position-absolute inset-0 py-2" style="opacity: 0.4;"
+       *ngIf="isNullOrEmpty(divValue) || disabled" (click)="onPlaceHolderClick()">{{placeholder}}</div>
+
+  <div
+    *ngIf="!disabled"
+    class="py-2 editable-div w-100 h-100"
+    style="min-height: 35px;max-height: 100px;cursor: text;word-break: break-all; overflow-y: overlay"
+    contenteditable="true"
+    (mousedown)="onMyDivMouseDown($event)"
+    (blur)="onblur1($event)"
+    (mouseup)="onMyDivMouseUp($event)"
+    (touchend)="onMyDivTouchEnd($event)"
+    (paste)="onMyDivPaste($event)"
+    (keyup)="onMyDivKeyUp($event)"
+    (keydown)="onMyDivKeyDown($event)"
+    #editablediv
+  ></div>
+</div>

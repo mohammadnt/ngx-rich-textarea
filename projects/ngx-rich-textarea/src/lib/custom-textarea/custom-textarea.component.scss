@@ -1,0 +1,36 @@
+.editable-div {
+  unicode-bidi: plaintext;
+  line-height: 20px;
+  font-family: -apple-system, Arial, Roboto, "Helvetica Neue", sans-serif !important;
+  -webkit-user-modify: read-write-plaintext-only;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+
+  overflow-wrap: break-word;
+  -webkit-nbsp-mode: space;
+  line-break: after-white-space;
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+[contenteditable=true] {
+  cursor: text;
+  outline: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  white-space: pre-wrap;
+}
+
+::ng-deep img.emoji {
+  width: 18px;
+  height: 18px;
+}
+
+
+.inset-0 {
+  inset: 0;
+}

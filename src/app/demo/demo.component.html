@@ -1,0 +1,13 @@
+<emoji-mart class="" [isNative]="true" [showPreview]="false" [set]="'apple'" (emojiClick)="addEmoji($event)"
+            [enableSearch]="false" [darkMode]="false"></emoji-mart>
+
+<div class="p-2">
+
+  <rich-textarea class="w-100" #richTextArea (onFocusIn)="onTextAreaFocusIn()"
+                 [(value)]="messageTextString" [disabled]="disabled"
+                 [placeholder]="'Message'"></rich-textarea>
+</div>
+<div class="p-2">
+  <div>output:</div>
+  <div>{{messageTextString}}</div>
+</div>

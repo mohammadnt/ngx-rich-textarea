@@ -1,0 +1,24 @@
+.text-area-buttons {
+  width: 100%;
+
+  padding-left: 10px;
+
+
+  min-height: 40px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 86%;
+
+  left: 0;
+
+  color: #a1a1a1;
+  font-size: 0.8rem;
+  z-index: 4;
+  text-align: center;
+}
+
+.text-area-button {
+  background: #fafafa;
+  border: solid 1px #ffc100;
+  border-radius: 12px;
+}
