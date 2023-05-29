@@ -992,4 +992,10 @@ export class CustomTextareaComponent implements OnInit, OnDestroy, AfterViewInit
       }
     });
   }
+
+  onMyDivInput() {
+
+    this.query();
+    this.store();
+  }
 }
